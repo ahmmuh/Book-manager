@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add new book</h1>
+        <form id="book-form">
+            <div>
+                <label for="title">Book name</label>
+                <input type="text" class="u-full-width" name="title" id="title">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" class="u-full-width" name="author" id="author">
+            </div>
+            <div>
+                <label for="sbn">ISBN</label>
+                <input type="text" class="u-full-width" name="isbn" id="sbn">
+            </div>
+            <input type="submit" value="Submit" class="u-full-width">
+        </form>
+
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Book name</th>
+                    <th>Author</th>
+                    <th>SBN</th>
+                </tr>
+            </thead>
+
+            <tbody id="bookList">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
